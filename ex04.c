@@ -4,6 +4,7 @@
 
 int main(){
   int coin,i,hc=0,tc=0;
+  char name[50];
   srand((unsigned int) time(NULL));
 
   for(i=0;i<3;i++){
@@ -17,6 +18,8 @@ int main(){
     }
   }
   printf("Heads: %d, Tails: %d\n",hc,tc);
+  if(hc>tc) printf("You won!\n");
+  else printf("You lost!\n");
 
   return 0;
 }
