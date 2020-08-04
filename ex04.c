@@ -7,6 +7,10 @@ int main(){
   char name[50];
   srand((unsigned int) time(NULL));
 
+  printf("Who are you?\n>");
+  scanf("%s",name);
+  printf("Hello,%s!\n\n",name);
+
   for(i=0;i<3;i++){
     coin=rand()%2;
     if(coin==0){
