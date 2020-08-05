@@ -11,6 +11,7 @@ int main(){
   scanf("%s",name);
   printf("Hello,%s!\n\n",name);
 
+  printf("Tossing a coin...\n");
   for(i=0;i<3;i++){
     coin=rand()%2;
     if(coin==0){
